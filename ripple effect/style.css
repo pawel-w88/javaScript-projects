@@ -1,0 +1,53 @@
+body {
+  text-align: center;
+}
+
+a.piBtn {
+  background: linear-gradient(90deg, rgb(51, 190, 209), rgb(220, 230, 44));
+  border-radius: 30px;
+  color: azure;
+  padding: 15px 30px;
+  margin: 20px auto;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  max-width: 200px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+
+}
+
+a.piBtn:nth-child(2){
+    background: linear-gradient(90deg, rgb(190, 249, 71), rgb(44, 50, 230));
+}
+
+a.piBtn:nth-child(3){
+    background: linear-gradient(90deg, rgb(143, 221, 237), rgb(220, 230, 44));
+}
+
+a.piBtn:nth-child(4){
+    background: linear-gradient(90deg, rgb(109, 233, 157), rgb(220, 230, 44));
+}
+
+.piBtnSpan {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.4);
+  pointer-events: none;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  animation: animate 0.4s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    width: 0px;
+    height: 0px;
+    opocity: 0.5;
+  }
+  100% {
+    width: 200px;
+    height: 200px;
+    opocity: 0;
+  }
+}
